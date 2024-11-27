@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICTAK Day 3</title>
+</head>
+<body>
+    <!-- Heading Tags  -->
+     <h1>HTML</h1>
+     <h2>ab</h2>
+     <h3>cd</h3>
+     <h4>ef</h4>
+     <h5>gh</h5>
+     <h6>ij</h6>
+    <!-- Paragraph Tag -->
+     <!-- p for paragraphs, br for breaks, to make a world bold = <b>, italics = <i>, underline= <u>  -->
+      <p> How to Open VS Code from Terminal in Windows?<br> <b>Open the terminal (Ctrl + Alt + T).</b><br><i>Type code to open VS Code in the current directory.</i><br><u>For opening a specific file or folder, use code [path to file/folder]</u></p>
+    <!-- List Tags -->
+     <ul>      
+        <!-- ul>li*3 or ul , li -->
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+     </ul>
+     <ol>
+        <!--ol>li*3 -->
+        <li>D</li>
+        <li>E</li>
+        <li>F</li>
+     </ol>
+    <ol type="I">
+        <!-- types are known as ATTRIBUTES, i,I,1-->
+        <li>Roman</li>
+        <li>Numerals</li>
+    </ol>
+    <ul type="square">
+        <!-- ul types are circle , disc , squares -->
+        <li>Circle</li>
+        <li>Disc</li>
+    </ul>
+    <!-- Image Tags -->
+     <!-- alt is displayed when image isnt available -->
+     <!-- create an image folder for easier access, use the img in the folder, folder/image path -->
+     <img src="https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcTKtu2Jeq3up39xnKKfjpLe-Z8VdByBjvggfQz9hqcpefCOvnsOfrbb7BdN2Wg7XR-HJ5jtUO5tpDueHArOcPHImRfjo71O07s4THvFFA" alt="London">
+     <img src="Images/London_Skyline_(125508655).jpeg" alt="London Skylines" srcset="">
+     <br><br>
+     <!-- Anchor Tags | Type 'a' and suggestion, typing after the href replaces the limk with the text -->
+      <a href="https://www.google.com">Here</a>
+      <br>
+      <!-- target opens up the hyperlink in a new tab, _blank = new tab, _self= same page -->
+      <a href="https://www.google.com"target="_blank">Click here for new tab</a>
+      <br>
+      <a href="https://www.google.com"target="_self">Click here for same page</a>
+    <!-- INPUT TAGS |  --> 
+     <br><br><br>
+     <label for="text">Name</label>
+     <input type="text" name="" placeholder="Name" id=""><br>
+     <label for="text">Email & Password</label>
+     <input type="text" name="" placeholder="Email" id=""><input type="password" name="" placeholder="Password" id=""><br>
+     <input type="number" name="" placeholder="Phone Number" id=""><input type="date" name="" placeholder="" id=""><br>
+     <label for="checkbox">Are you a student</label>
+     <input type="checkbox" name="" placeholder="Are you a student" id="">
+     <br><br><br>
+     <!-- Form is used grouping the data for backend appliations and is better for styling -->
+     <form action="">
+        <label for="text">Name</label>
+        <input type="text" name="" placeholder="Name" id=""><br>
+        <label for="text">Email & Password</label>
+        <input type="text" name="" placeholder="Email" id=""><input type="password" name="" placeholder="Password" id=""><br>
+        <input type="number" name="" placeholder="Phone Number" id=""><input type="date" name="" placeholder="" id=""><br>
+        <label for="checkbox">Are you a student</label>
+        <input type="checkbox" name="" placeholder="Are you a student" id=""><br>
+        <input type="submit">
+        <!-- Instead of submit inp tup button is used more often -->
+        <!-- <input type="button" value="Submit"> -->
+     </form><br><br><br><br><br>
+     <!-- TABLE | used to create tables, head = 'thead', rows = 'tr', cell = 'td' -->
+      <table border="solid">
+        <!-- insdie table tag, border can be used as an attribute = solid , dashed , dotted -->
+        <thead>
+            <!-- tr>th*3, th is column header(bold) , td - not bold-->
+            <tr>
+                <th>Sl No:</th>
+                <th>Name</th>
+                <th>Place</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Akhil</td>
+                <td>Vattiyoorakavu</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Anup</td>
+                <td>Bakery Jn</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Jithul</td>
+                <td>Bakery Jn</td>
+            </tr>
+        </tbody>
+      </table>
+      <!-- Github, Open Terminal = 'git init', 'git add .','git commit -m "any msg here" -->
+</body>
+</html>
