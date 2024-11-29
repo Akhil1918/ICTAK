@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="selectorstyle.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+</head>
+<body>
+    <!-- ID is used for unique styling, Class is used for group styling -->
+    <!-- # is used to call ID, . is used to call Class, * (universal selector) is used to call every element in the body -->
+    <h1 id="s1">Selector 1</h1>
+    <h1 class="s2">Selector 2</h1>
+    <h1>Selector 3</h1> 
+    <!-- both are called using multiple element selector -->
+    <!-- DIV TAGS -->
+    <div class="d1">
+        <h2>Flutter</h2>
+        <h4>Flutter transforms the entire app development process. Build, test, and deploy beautiful mobile, web, desktop, and embedded apps from a single codebase.</h4>
+        <p>India is a country</p>
+        <p>England is a country</p>
+        <p>France is a country</p>
+    </div>
+    <!-- achor selector used to change attributes fo anchor tags -->
+<a href="https://retail.ictkerala.org/mod/workshop/view.php?id=26498"target="_blank">Click here</a>
+<br><br>
+<!-- Small is used to display errors -->
+<!-- Span bg colour wraps around the element only unlike div and such which covers the whole space irrespective of the element -->
+<small style="background-color: yellow;">There seems to be an error</small><br>
+<span style="background-color: bisque;">There seems to be another error</span>
+<br>
+<br>
+<table class="t1">
+    <!-- insdie table tag, border can be used as an attribute = solid , dashed , dotted -->
+    <thead>
+        <!-- tr>th*3, th is column header(bold) , td - not bold-->
+        <tr>
+            <th>Sl No:</th>
+            <th>Name</th>
+            <th>Place</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Akhil</td>
+            <td>Vattiyoorakavu</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Anup</td>
+            <td>Bakery Jn</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Jithul</td>
+            <td>Bakery Jn</td>
+        </tr>
+    </tbody>
+  </table>
+  <br><br>
+  <form action="" class="f1">
+    <label for="text">Name</label>
+    <input type="text" name="" placeholder="Name" id=""><br>
+    <label for="text">Email</label>
+    <input type="text" name="" placeholder="Email" id=""><input type="password" name="" placeholder="Password" id=""><br>
+    <input type="number" name="" placeholder="Phone Number" id=""><input type="date" name="" placeholder="" id=""><br>
+    <label for="c1">Are you a student</label>
+    <input type="checkbox" name="" placeholder="Are you a student" id="c1"><br>
+    <input type="submit">
+    <!-- Instead of submit inp type button is used more often -->
+    <!-- <input type="button" value="Submit"> -->
+ </form>
+</body>
+</html>

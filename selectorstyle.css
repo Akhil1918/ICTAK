@@ -1,0 +1,22 @@
+h1#s1{color: brown;}
+h1.s2{color: burlywood;}
+h1,p{color: antiquewhite;}
+h2,h4{color: beige;}
+.d1{background-color: darkblue;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+a{color: brown ;text-decoration: dashed;}
+/* used to add an image to the background  */
+body{
+    background-image: url(https://th.bing.com/th/id/OIP.fCSZp5lUTYxnpJyxgTAbsgHaEo?rs=1&pid=ImgDetMain);
+background-size: cover;}
+.t1{color: antiquewhite;
+    border: 5px dashed rgb(54, 51, 153);
+    margin: 10% 50% 10% 40%;
+    padding: 5px 50px 5px 50px;}
+
+.t1 tr td{border: 5px dashed rgb(15, 114, 150); }
+.f1{color: rgb(0, 0, 0);
+    border: 5px solid rgb(246, 5, 5);   
+margin: 10% 50% 10% 42%;
+padding: 50px 175px 50px 25px;
+background-color: rgb(255, 255, 255);
+;}
