@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neuromancer - Book Details</title>
+    <style>
+        body {
+            background-color: #f4f4f4;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url(Images10task/Library2.jpg);
+            background-size: cover;
+        }
+        .navbar {
+            background-color: #2c3e50;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .navbar-brand {
+            color: #ecf0f1 !important;
+            font-weight: bold;
+        }
+        .navbar-nav .nav-link {
+            color: #bdc3c7 !important;
+            transition: all 0.3s ease;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #ffffff !important;
+            transform: scale(1.05);
+        }
+        .book-details {
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            padding: 30px;
+            margin-top: 30px;
+        }
+        .book-image {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgb(254, 254, 254);
+        }
+        .recommendation-card {
+            transition: transform 0.3s ease;
+            margin-bottom: 20px;
+            background-color: transparent;
+            color: whitesmoke;
+            border: 1px solid lightslategrey;
+        }
+        .recommendation-card:hover {
+            transform: scale(1.05);
+        }
+        .recommendation-card img {
+            height: 400px;
+            object-fit: contain;
+            border-radius: 5px;
+        }
+        .container{
+            backdrop-filter: blur(20px);
+            color: whitesmoke;
+        }
+        .btn:hover{
+            transform: scale(1.05);
+            
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+        <div class="container">
+            <a class="navbar-brand" href="#">Library Management System</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="signup.html">Sign Up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="books.html">Book Collection</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Book Details Container -->
+    <div class="container">
+        <div class="book-details">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="Images10task/Neuromancer.jpg" alt="Neuromancer" class="book-image">
+                </div>
+                <div class="col-md-8">
+                    <h1>Neuromancer</h1>
+                    <h3 class="text-secondary">William Gibson</h3>
+                    
+                    <div class="mt-4">
+                        <h4>About the Book</h4>
+                        <p>Neuromancer is a seminal work of cyberpunk science fiction that revolutionized the genre. The novel follows Case, a washed-up computer hacker hired by a mysterious employer for one last job. Set in a dystopian future where technology and humanity are deeply intertwined, the story explores themes of artificial intelligence, corporate power, and the blurred lines between human consciousness and digital reality.</p>
+                        
+                        <div class="mt-4">
+                            <h4>Book Details</h4>
+                            <ul>
+                                <li><b>Genre:</b> Science Fiction</li>
+                                <li><b>Published:</b> 1984</li>
+                                <li><b>Pages:</b> 271</li>
+                                <li><b>Awards:</b> Nebula Award, Philip K. Dick Award, Hugo Award</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recommendations -->
+            <div class="row mt-5">
+                <div class="col-12">
+                    <h3 class="mb-4">Recommended Science Fiction Books</h3>
+                </div>
+                <div class="col-md-6">
+                    <div class="card recommendation-card">
+                        <img src="Images10task/Dune.jpg" class="card-img-top" alt="Dune">
+                        <div class="card-body">
+                            <h5 class="card-title">Dune</h5>
+                            <p class="card-text">Frank Herbert</p>
+                            <p>An epic science fiction novel set in a complex interstellar society, exploring themes of politics, religion, and ecology. Like Neuromancer, it offers a deep, immersive world with intricate social and technological dynamics.</p>
+                            <a href="dune.html" class="btn btn-primary">View Book</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card recommendation-card">
+                        <img src="Images10task/Martian.jpg" class="card-img-top" alt="The Martian">
+                        <div class="card-body">
+                            <h5 class="card-title">The Martian</h5>
+                            <p class="card-text">Andy Weir</p>
+                            <p>A modern science fiction novel that blends technical detail with human drama. While different in style from Neuromancer, it shares a deep exploration of technology and human survival in an unforgiving environment.</p>
+                            <a href="martian.html" class="btn btn-primary">View Book</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

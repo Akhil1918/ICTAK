@@ -1,29 +1,216 @@
 <!DOCTYPE html>
-<!-- HTML5 supports MMS , graphics etc - CSS3 versions -->
 <html lang="en">
 <head>
-    <!-- command to connect an external css file to a html file , type 'link' -->
-    <link rel="stylesheet" href="style.css">
-    <!-- internal CSS command starts here -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Website</title>
+    <link rel="icon" href="Images10task/favicon.png" type="image/x-icon">
     <style>
-        /* this is the comment for CSS, internal css is used to control the elements in the body */
+        body {
+            background-color: #f4f4f4;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url(Images10task/Library2.jpg);
+            background-size: cover;
+
+        }
+        .navbar {
+            background-color: #2c3e50;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .navbar-brand {
+            color: #ecf0f1 !important;
+            font-weight: bold;
+        }
+        .navbar-nav .nav-link {
+            color: #bdc3c7 !important;
+            transition: all 0.3s ease;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #ffffff !important;
+            transform: scale(1.05);
+        }
+        .hero-section {
+            color: white;
+            text-shadow: 2px 2px 4px #000000;
+            padding: 100px 0;
+            text-align: center;
+        }
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .btn-explore {
+            margin-top: 20px;
+            color: white;
+            border: 0.1px solid white;
+            border-radius: 30px;
+            letter-spacing: 1px;
+            transition: 0.5s ease-in-out;
+            backdrop-filter: blur(15px);
+        }
+        .btn-explore:hover {
+            background-color: silver;
+            color: darkblue;
+            text-shadow: 0.1px 0.1px 1px black;
+            transform: translateY(-5px);
+        }
+        .book-card {
+            transition: 0.3s ease;
+            margin-bottom: 20px;
+            border: 0.1px solid whitesmoke;
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: transparent;
+        }
+        .book-card:hover {
+            transform: scale(1.05);
+        }
+        .book-card .card-img-top {
+            height: 400px;
+            object-fit: cover;
+            background-color: transparent;
+        }
+        .book-card .card-body {
+            background-color: whitesmoke;
+            text-align: center;
+        }
+        .book-card .card-title {
+            color: #2c3e50;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .book-card .card-text {
+            color: #7f8c8d;
+            font-style: italic;
+        }
+        .book-card .btn {
+            
+            border: none;
+            transition: 0.3s ease;
+        }
+        .book-card .btn:hover {
+            background-color: #2980b9;
+            color: whitesmoke;
+            transform: scale(1.05);
+        }
+        .library-features {
+            margin-top: 50px;
+        }
         h2{
-            background-color:burlywood;
-            /* text-align: center; */
+            border-bottom: 2px solid #ffffff;
+            color: #ffffff;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 4px #000000;
         }
     </style>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=\, initial-scale=1.0">
-    <title>Document</title>
 </head>
 <body>
-    <!-- Types of CSS : inline, internal , external -->
-      <!-- hierarchy is for inline , internal and then external,check index2 -->
-     <!-- inline doesnt need curly brackets -->
-     <h1 style="color: rgb(142, 127, 255);text-align: center;">Switzerland</h1>
-    <p style="color: indigo; text-align: center;"><b>Switzerland, federated country of central Europe. Switzerland's administrative capital is Bern, while Lausanne serves as its judicial centre.</b></p>
-    <h2 style="background-color: black;color: aliceblue;text-align: center;">England</h2>
-    <h2 style="text-align: center;">London <br>UK</h2>
-    <h3>India</h3>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Library Management System</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <a class="nav-link" href="signup.html">Sign Up</a>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <a class="nav-link" href="books.html">Book Collection</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Welcome to Our Library</h1>
+                <p class="lead">Discover a world of knowledge at your fingertips. Browse through our extensive collection of books across various genres.</p>
+                <a href="books.html" class="btn btn-explore btn-lg">Explore Books</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Library Features Section -->
+    <div class="container library-features">
+        <div class="row text-center">
+            <div class="col-md-4 mb-4">
+                <div class="card book-card h-100">
+                    <div class="card-body">
+                        <i class="fas fa-book-open text-primary" style="font-size: 3em; margin-bottom: 15px;"></i>
+                        <h4 class="card-title">Extensive Collection</h4>
+                        <p class="card-text">Books across multiple genres, ensuring something for every reader.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card book-card h-100">
+                    <div class="card-body">
+                        <i class="fas fa-users text-primary" style="font-size: 3em; margin-bottom: 15px;"></i>
+                        <h4 class="card-title">Community</h4>
+                        <p class="card-text">Connect with fellow book lovers, share recommendations, and join reading groups.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card book-card h-100">
+                    <div class="card-body">
+                        <i class="fas fa-digital-tachograph text-primary" style="font-size: 3em; margin-bottom: 15px;"></i>
+                        <h4 class="card-title">Digital Access</h4>
+                        <p class="card-text">Online borrowing, e-books, and digital resources available 24/7 for your convenience.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Featured Books Section -->
+    <div class="container my-5">
+        <h2 class="text-center text-white">Featured Books</h2>
+        <div class="row mt-4">
+            <div class="col-md-4 mb-4">
+                <div class="card book-card">
+                    <img src="Images10task/Martian.jpg" class="card-img-top object-fit-contain" alt="The Martian">
+                    <div class="card-body">
+                        <h5 class="card-title">The Martian</h5>
+                        <p class="card-text">Andy Weir</p>
+                        <a href="martian.html" class="btn btn-success">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card book-card">
+                    <img src="Images10task/Wayofkings.jpg" class="card-img-top object-fit-contain" alt="Way of Kings">
+                    <div class="card-body">
+                        <h5 class="card-title">Way of Kings</h5>
+                        <p class="card-text">Brandon Sanderson</p>
+                        <a href="wayofkings.html" class="btn btn-success">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card book-card">
+                    <img src="Images10task/Mistborn.jpg" class="card-img-top object-fit-contain" alt="Mistborn">
+                    <div class="card-body">
+                        <h5 class="card-title">Mistborn</h5>
+                        <p class="card-text">Brandon Sanderson</p>
+                        <a href="mistborn.html" class="btn btn-success">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
